@@ -1,0 +1,11 @@
+<templateSet group="AndroidLog">
+  <template name="logm" value="android.util.Log.d(TAG, $content$);" description="Logs method name and its arguments" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="groovyScript(&quot;def params = _2.collect {it + ' = [\&quot; + ' + it + ' + \&quot;]'}.join(', '); return '\&quot;' + _1 + '() called' + (params.empty  ? '' : ' with: ' + params) + '\&quot;'&quot;, methodName(), methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="logr" value="android.util.Log.d(TAG, &quot;$METHOD_NAME$() returned: &quot; +  $result$);" description="Logs result of this method" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="result" expression="variableOfType(methodReturnType())" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

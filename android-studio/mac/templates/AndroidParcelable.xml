@@ -1,0 +1,16 @@
+<templateSet group="AndroidParcelable">
+  <template name="Parcelable" value="protected $className$(android.os.Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(@android.support.annotation.NonNull android.os.Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;public static final android.os.Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return new $className$(in);&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Creates a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ParcelableEnum" value="@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(android.os.Parcel dest, int flags) {&#10;  dest.writeInt(this.ordinal());&#10;}&#10;   &#10;public static final android.os.Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return $className$.values()[in.readInt()];&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Creates a parcelable block for your current enum" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ParcelBoolean" value="dest.writeInt($bool$? 0 : 1);" description="Writes a single boolean value to a parcel" toReformat="true" toShortenFQNames="true">
+    <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="UnparcelBoolean" value="$bool$ = 0 == in.readInt();" description="Reads a single boolean value from a parcel" toReformat="true" toShortenFQNames="true">
+    <variable name="bool" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>

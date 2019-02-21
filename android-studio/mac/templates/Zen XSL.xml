@@ -1,0 +1,64 @@
+<templateSet group="Zen XSL">
+  <template name="xsl" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;&#10;  $VAR0$&#10;&lt;/xsl:stylesheet&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="!!!" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;" description="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="par" value="&lt;xsl:param name=&quot;$VAR0$&quot;&gt;$END$&lt;/xsl:param&gt;" description="&lt;xsl:param name=&quot;...&quot;&gt;...&lt;/xsl:param&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="pare" value="&lt;xsl:param name=&quot;$VAR0$&quot; select=&quot;$VAR1$&quot;/&gt;" description="&lt;xsl:param name=&quot;...&quot; select=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="co" value="&lt;xsl:copy-of select=&quot;$VAR0$&quot;/&gt;" description="&lt;xsl:copy-of select=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="val" value="&lt;xsl:value-of select=&quot;$VAR0$&quot;/&gt;" description="&lt;xsl:value-of select=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ap" value="&lt;xsl:apply-templates select=&quot;$VAR0$&quot; mode=&quot;$VAR1$&quot;/&gt;" description="&lt;xsl:apply-templates select=&quot;...&quot; mode=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="call" value="&lt;xsl:call-template name=&quot;$VAR0$&quot;/&gt;" description="&lt;xsl:call-template name=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="vare" value="&lt;xsl:variable name=&quot;$VAR0$&quot; select=&quot;$VAR1$&quot;/&gt;" description="&lt;xsl:variable name=&quot;...&quot; select=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sort" value="&lt;xsl:sort select=&quot;$VAR0$&quot; order=&quot;$VAR1$&quot;/&gt;" description="&lt;xsl:sort select=&quot;...&quot; order=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="strip" value="&lt;xsl:strip-space elements=&quot;$END$&quot;/&gt;" description="&lt;xsl:strip-space elements=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="pres" value="&lt;xsl:preserve-space elements=&quot;$END$&quot;/&gt;" description="&lt;xsl:preserve-space elements=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="nam" value="&lt;namespace-alias stylesheet-prefix=&quot;$VAR0$&quot; result-prefix=&quot;$END$&quot;/&gt;" description="&lt;namespace-alias stylesheet-prefix=&quot;...&quot; result-prefix=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="num" value="&lt;xsl:number value=&quot;$END$&quot;/&gt;" description="&lt;xsl:number value=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="key" value="&lt;xsl:key name=&quot;$VAR0$&quot; match=&quot;$VAR1$&quot; use=&quot;$VAR2$&quot;/&gt;" description="&lt;xsl:key name=&quot;...&quot; match=&quot;...&quot; use=&quot;...&quot;/&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

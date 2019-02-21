@@ -1,0 +1,10 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>Log.d</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LogUtils.d</replace>
+    </replaceStrings>
+  </component>
+</application>

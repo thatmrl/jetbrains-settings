@@ -1,0 +1,6 @@
+import groovy.util.GroovyTestCase
+
+#parse("File Header.java")
+public class ${NAME} {
+  ${BODY}
+}

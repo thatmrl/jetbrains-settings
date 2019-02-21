@@ -1,0 +1,8 @@
+<templateSet group="AndroidXML">
+  <template name="appNs" value="xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;" description="Adds application namespace" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="toolsNs" value="xmlns:tools=&quot;http://schemas.android.com/tools&quot;" description="Adds tools namespace to Android XML file" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>

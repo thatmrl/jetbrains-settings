@@ -1,0 +1,8 @@
+<application>
+  <component name="UISettings">
+    <option name="HIDE_TABS_IF_NEED" value="false" />
+    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
+    <option name="DND_WITH_PRESSED_ALT_ONLY" value="true" />
+    <option name="SHOW_DIRECTORY_FOR_NON_UNIQUE_FILENAMES" value="false" />
+  </component>
+</application>
